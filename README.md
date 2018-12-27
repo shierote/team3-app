@@ -56,3 +56,11 @@ $ git push origin (ブランチ名)
 $ git checkout -b 作成したいブランチ名
 $ git checkout 移動したいブランチ名
 ```
+
+### Pull
+- リモートの更新内容をローカルに落とすコマンド
+- 開発途中にちょくちょくしないとコンフリクトを起こす可能性大
+```
+$ git pull origin master
+```
+(master以外のブランチをPullすることはほとんどない)
