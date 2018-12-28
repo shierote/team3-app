@@ -1,29 +1,34 @@
-<h1>Fees#new</h1>
-<p>Find me in app/views/fees/new.html.erb</p>
+<h1>カンタン入力</h1>
+<div class="form-container">
+<div class="form-inputs-fees">
+<form class="ui form">
 <%= form_for @fee do |f| %>
   <p class="field">
-    <%= f.label :month %>
-    <%= f.date_field :month %>
+    <label>月</label>
+    <%= f.date_field :month,:class=>"input_form" %>
   </p>
 
   <p class="field">
-    <%= f.label :people_number %>
-    <%= f.number_field :people_number %>
+    <label>世帯人数</label>
+    <%= f.number_field :people_number,:class=>"input_form" %>
   </p>
 
   <p class="field">
-    <%= f.label :electricity %>
-    <%= f.number_field :electricity %>
+    <label>電気代</label>
+    <%= f.number_field :electricity,:class=>"input_form" %>
   </p>
 
   <p class="field">
-    <%= f.label :gas %>
-    <%= f.number_field :gas %>
+    <label>ガス代</label>
+    <%= f.number_field :gas,:class=>"input_form" %>
   </p>
 
   <p class="field">
-    <%= f.label :water %>
-    <%= f.number_field :water %>
+    <label>水道代</label>
+    <%= f.number_field :water,:class=>"input_form" %>
   </p>
-  <%= f.submit %>
+  <%= f.submit "完了" , :class=>"ui green button" %>
+  </form>
 <% end %>
+</div>
+</div>
