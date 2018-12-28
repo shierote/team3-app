@@ -125,7 +125,17 @@ input[type="email"] {
   background-color: #fff;
 }
 .score_box {
-  height: 200px;
-  width: 200px;
-  border: 3px solid blue;
+  height: 400px;
+  width: 400px;
+  border: 30px solid green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.score_text {
+}
+.canvas-container {
+  margin-left: 200px;
+  width: 600px;
+  height: 400px;
+  display: inline-block;
 }

@@ -1,7 +1,7 @@
 window.draw_graph = ->
     ctx = document.getElementById("myChart").getContext('2d')
     myChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
             datasets: [{
