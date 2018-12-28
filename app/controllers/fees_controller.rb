@@ -1,4 +1,5 @@
 class FeesController < ApplicationController
+  before_action :authenticate_user!
   def new
     @fee = current_user.fee.build
   end
@@ -19,7 +20,7 @@ class FeesController < ApplicationController
   def update
     @fee = Fee.find(params[:id])
     if @fee.update_attributes(fee_params)
-     redirect_to root_url
+      redirect_to root_path
     else
       render 'fees/edit'
     end
