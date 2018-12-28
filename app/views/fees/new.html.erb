@@ -4,7 +4,7 @@
 <%= form_for @fee, :html => {:class => "ui form"} do |f| %>
   <p class="field">
     <label>月</label>
-    <%= f.date_field :month,:class=>"input_form" %>
+    <%= f.date_select :month, :discard_day=>true %>
   </p>
 
   <p class="field">
