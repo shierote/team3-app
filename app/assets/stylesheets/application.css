@@ -123,6 +123,7 @@ input[type="email"] {
 .mypage_main {
   padding-top: 20px;
   background-color: #fff;
+  height: 120%;
 }
 .score_box {
   height: 300px;
@@ -147,5 +148,19 @@ input[type="email"] {
   display: inline-block;
 }
 .chart-title {
+  padding-left: 40px;
+}
+.rank-table {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.rank-text {
+  font-size: 20px;
   padding-left: 30px;
+  font-weight: bold;
+}
+.best-rank-title {
+  margin-top: 30px;
 }
