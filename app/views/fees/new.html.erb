@@ -1,0 +1,29 @@
+<h1>Fees#new</h1>
+<p>Find me in app/views/fees/new.html.erb</p>
+<%= form_for @fee do |f| %>
+  <p class="field">
+    <%= f.label :month %>
+    <%= f.date_field :month %>
+  </p>
+
+  <p class="field">
+    <%= f.label :people_number %>
+    <%= f.number_field :people_number %>
+  </p>
+
+  <p class="field">
+    <%= f.label :electricity %>
+    <%= f.number_field :electricity %>
+  </p>
+
+  <p class="field">
+    <%= f.label :gas %>
+    <%= f.number_field :gas %>
+  </p>
+
+  <p class="field">
+    <%= f.label :water %>
+    <%= f.number_field :water %>
+  </p>
+  <%= f.submit %>
+<% end %>

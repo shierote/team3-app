@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      fee:
+        month: "月"
+        people_number: "世帯人数"
+        electricity: "電気代"
+        gas: "ガス代"
+        water: "水道代"
