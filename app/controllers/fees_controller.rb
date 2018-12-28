@@ -13,6 +13,16 @@ class FeesController < ApplicationController
   end
 
   def edit
+    @fee = Fee.find(params[:id])
+  end
+
+  def update
+    @fee = Fee.find(params[:id])
+    if @fee.update_attributes(fee_params)
+     redirect_to root_url
+    else
+      render 'fees/edit'
+    end
   end
 
   private
