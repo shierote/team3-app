@@ -1,6 +1,6 @@
 <div class="form-container">
   <h2 class="login-title">ログイン</h2>
-
+<div class="form-inputs">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "メールアドレス" %>
@@ -20,6 +20,6 @@
       <%= f.submit  "ログイン" , :class=>"ui green button" %>
     </div>
   <% end %>
-
+</div>
   <%#= render "users/shared/links" %>
 </div>
