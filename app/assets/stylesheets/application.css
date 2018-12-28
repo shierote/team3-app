@@ -125,13 +125,19 @@ input[type="email"] {
   background-color: #fff;
 }
 .score_box {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border: 30px solid green;
   border-radius: 50%;
   display: inline-block;
+  line-height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
 }
 .score_text {
+  font-size: 120px;
+  height: 300px;
 }
 .canvas-container {
   margin-left: 200px;

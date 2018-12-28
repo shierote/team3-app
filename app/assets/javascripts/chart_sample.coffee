@@ -3,10 +3,12 @@ window.draw_graph = ->
     myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            labels: ["7月", "8月", "9月", "10月", "11月", "12月"],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                label: 'スコアの推移',
+                lineTension: 0,
+                fill: false,
+                data: [40, 37, 49, 60, 78, 85],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -30,7 +32,7 @@ window.draw_graph = ->
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:false
                     }
                 }]
             }
