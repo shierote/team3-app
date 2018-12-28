@@ -1,5 +1,9 @@
 class FeesController < ApplicationController
   before_action :authenticate_user!
+  def show
+    @fee = Fee.find(params[:id])
+  end
+
   def new
     @fee = current_user.fee.build
   end
