@@ -16,3 +16,4 @@
 //= require_tree .
 //= require semantic-ui
 //= require bootstrap-sprockets
+//= require Chart.min
