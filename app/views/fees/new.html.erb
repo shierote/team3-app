@@ -1,8 +1,7 @@
 <h1>カンタン入力</h1>
 <div class="form-container">
 <div class="form-inputs-fees">
-<form class="ui form">
-<%= form_for @fee do |f| %>
+<%= form_for @fee, :html => {:class => "ui form"} do |f| %>
   <p class="field">
     <label>月</label>
     <%= f.date_field :month,:class=>"input_form" %>
@@ -27,8 +26,7 @@
     <label>水道代</label>
     <%= f.number_field :water,:class=>"input_form" %>
   </p>
-  <%= f.submit "完了" , :class=>"ui green button" %>
-  </form>
+    <%= f.submit "完了" , :class=>"ui green button" %>
 <% end %>
 </div>
 </div>
