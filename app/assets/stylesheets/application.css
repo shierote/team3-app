@@ -14,22 +14,27 @@
  *= require_self
  */
 @import "semantic-ui";
-
+.alert {
+  position: absolute;
+}
 body {
   background-color: #fafafa;
+  margin: 0;
+  padding: 0;
 }
 nav {
   text-align: right;
   float: right;
 }
-.container {
+/* .container {
   margin: 20px 40px;
-}
+} */
 .form-container {
   width: 500px;
   margin: 0 auto;
 }
 .login-title {
+  padding-top: 30px;
   text-align: center;
 }
 .field {
@@ -93,4 +98,34 @@ input[type="email"] {
 }
 .icon {
   float: left;
+}
+.mypage_header {
+  height: 120px;
+  line-height: 100px;
+  padding-left: 100px;
+  background-color: #fff;
+  border-bottom: 3px solid #555;
+}
+#mypage_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+  font-size: 50px;
+}
+.links {
+  float: right;
+  padding-right: 30px;
+}
+.mypage_link {
+  display: inline-block;
+  margin-left: 20px;
+}
+.mypage_main {
+  padding-top: 20px;
+  background-color: #fff;
+}
+.score_box {
+  height: 200px;
+  width: 200px;
+  border: 3px solid blue;
 }
