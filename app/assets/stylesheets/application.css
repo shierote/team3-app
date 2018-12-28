@@ -140,8 +140,12 @@ input[type="email"] {
   height: 300px;
 }
 .canvas-container {
-  margin-left: 200px;
-  width: 600px;
+  width: 40%;
+  margin-right: 50px;
+  margin-left: 50px;
   height: 400px;
   display: inline-block;
+}
+.chart-title {
+  padding-left: 30px;
 }
