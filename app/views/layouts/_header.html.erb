@@ -1,0 +1,27 @@
+<div class="mypage_header">
+  <%= link_to image_tag("symbol.png", class: "symbol-image"), root_path  %>
+  <%= link_to image_tag("logo_type.png", class: "logo_type-image"), root_path %>
+  <% if user_signed_in? %>
+  <div class="links">
+    <div class="mypage_link" >
+    <%= link_to "カンタン入力", new_fee_path ,:class=>"huge ui green button"%>
+    </div>
+    <div class="mypage_link" >
+    <%= link_to 'プロフィール変更', edit_user_registration_path,:class=>"huge ui blue button" %>
+    </div>
+    <div class="mypage_link" >
+    <%= link_to "ログアウト", sign_out_path,:class=>"huge ui blue button" %>
+    </div>
+  </div>
+  <% else %>
+  <div class="links">
+    <div class="mypage_link" >
+    <%= link_to 'サインイン', new_user_registration_path,:class=>"huge ui blue button" %>
+    </div>
+    <div class="mypage_link" >
+    <%= link_to "ログイン", new_user_session_path,:class=>"huge ui blue button" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+
