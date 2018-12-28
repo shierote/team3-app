@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+@import "semantic-ui";
+
+body {
+  background-color: #fafafa;
+}
+nav {
+  text-align: right;
+  float: right;
+}
+.container {
+  margin: 20px 40px;
+}
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+}
+.login-title {
+  text-align: center;
+}
+.field {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="password"] {
+  width: 300px;
+  height: 46px;
+  padding: 12;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #e6ecf0;
+  margin-bottom: 20px;
+}
+input[type="email"] {
+  width: 300px;
+  height: 46px;
+  padding: 12;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #e6ecf0;
+  margin-bottom: 20px;
+}
+.actions {
+  padding-left: 100px;
+  padding-top: 20px;
+}
+.submit_btn {
+  width: 100px;
+  padding: 15px 10px;
+  border-style: none;
+  color: #fff;
+  background-color: #4ab3f4;
+  border-radius: 100px;
+}
